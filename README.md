@@ -1,72 +1,24 @@
-<p align="center">
-    <h1 align="center">POS System Using Laravel</h1>
-</p>
+Complete this steps by that order
+1)composer install
+2)Rename or copy .env.example file to .env 1.php artisan key:generate to generate app key.
+3)Set your database credentials in your .env file
+4)Set your APP_URL in your .env file.
+5)php artisan storage:link
+6)php artisan migrate
+7)php artisan db:seed --class=ProductsTableSeeder
+8)php artisan db:seed --class=PharmaciesTableSeeder
+9)php artisan db:seed --class=PharmacyProductTableSeeder
+10)npm install
+11)npm run dev
 
-The project was created while recording video "[Create POS System Using Laravel](https://www.youtube.com/watch?v=Y_NRk0lOOJc&list=PL2hV0q47BY-G9f5xG9Vq-wGjSyy1BekOv)"
+//here I used the perfix "admin" 
+http://127.0.0.1:8000/admin/products
+In products page u can click on any row to show details
+on eye button to assign product to pharmacy or many pharmacies
 
-## Installation
+to use that command "php artisan products:search-cheapest product_id"
+please make sure the product_id is from products table in products page 
 
-### Requirements
 
-For system requirements you [Check Laravel Requirement](https://laravel.com/docs/10.x/deployment#server-requirements)
-
-### Clone the repository from github.
-
-    git clone https://github.com/angkosal/laravel-pos.git [YourDirectoryName]
-
-The command installs the project in a directory named `YourDirectoryName`. You can choose a different
-directory name if you want.
-
-### Install dependencies
-
-Laravel utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using Laravel, make sure you have Composer installed on your machine.
-
-    cd YourDirectoryName
-    composer install
-
-### Config file
-
-Rename or copy `.env.example` file to `.env` 1.`php artisan key:generate` to generate app key.
-
-1. Set your database credentials in your `.env` file
-1. Set your `APP_URL` in your `.env` file.
-
-### Database
-
-1. Migrate database table `php artisan migrate`
-1. `php artisan db:seed`, this will initialize settings and create and admin user for you [email: admin@gmail.com - password: admin123]
-
-### Install Node Dependencies
-
-1. `npm install` to install node dependencies
-1. `npm run dev` for development or `npm run build` for production
-
-### Create storage link
-
-`php artisan storage:link`
-
-### Run Server
-
-1. `php artisan serve` or Laravel Homestead
-1. Visit `localhost:8000` in your browser. Email: `admin@gmail.com`, Password: `admin123`.
- <!-- 1. Online demo: [pos.khmernokor.com](https://pos.khmernokor.com/) -->
-
-### Screenshots
-
-#### Product list
-
-![Product list](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/products_list.png)
-
-#### Create order
-
-![Create order](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/pos.png)
-
-#### Order list
-
-![Order list](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/order_list.png)
-
-#### Customer list
-
-![Customer list](https://raw.githubusercontent.com/angkosal/laravel-pos/master/screenshots/customer_list.png)
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/angkosal)
+Thanks
+If there any problem please contact me.

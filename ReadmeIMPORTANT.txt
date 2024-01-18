@@ -20,5 +20,3 @@ to use that command "php artisan products:search-cheapest product_id"
 please make sure the product_id is from products table in products page 
 
 
-Thanks
-If there any problem please contact me.
